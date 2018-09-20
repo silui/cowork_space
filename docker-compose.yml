@@ -1,0 +1,9 @@
+version: '3.0'
+
+services:
+  custom_django:
+    build: .
+    ports:
+      - 80:80
+    stdin_open: true
+    tty: true
