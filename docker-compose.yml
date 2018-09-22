@@ -3,9 +3,9 @@ version: '3.0'
 services:
   custom_django:
     build: .
+    command: python3 manage.py runserver 0.0.0.0:8000
     ports:
-      - 80:80
-      - 8000:8000
+      - "80:8000"
     stdin_open: true
     tty: true
     volumes:
