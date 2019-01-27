@@ -3,7 +3,7 @@ version: '3.0'
 services:
   custom_django:
     build: .
-#    command: python3 ./mysite/manage.py runserver 0.0.0.0:8000
+    command: python ./cowork_space/manage.py runserver 0:8000
     ports:
       - "80:8000"
       - "3000:3000"
