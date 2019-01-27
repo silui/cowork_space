@@ -2,8 +2,6 @@ FROM python
 
 ENV PYTHONUMBUFFERED 1
 
-ENV wai $wai
-
 RUN mkdir /code
 
 WORKDIR /code
