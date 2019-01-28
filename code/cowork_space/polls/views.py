@@ -15,5 +15,5 @@ def index(request):
 def test(request,multipler=2):
     if(multipler>20):
         return HttpResponse("multipler too big")
-    return HttpResponse("this is the test page\n"+str(f(multipler)))
+    return HttpResponse("this is the test page"+str(f(multipler)))
 
