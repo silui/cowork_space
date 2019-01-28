@@ -10,7 +10,7 @@ def f(x):
 
 def index(request):
     doodoo = os.environ['wai']
-    return HttpResponse("Yolo" + doodoo)
+    return HttpResponse("Please work this time" + doodoo)
 
 def test(request,multipler=2):
     if(multipler>20):
