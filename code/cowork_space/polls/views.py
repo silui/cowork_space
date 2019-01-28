@@ -10,10 +10,10 @@ def f(x):
 
 def index(request):
     doodoo = os.environ['wai']
-    return HttpResponse("Hello, world." + doodoo)
+    return HttpResponse("Hello, world.\n" + doodoo)
 
 def test(request,multipler=2):
     if(multipler>20):
         return HttpResponse("multipler too big")
-    return HttpResponse("this is the test page"+str(f(multipler)))
+    return HttpResponse("this is the test page\n"+str(f(multipler)))
 
