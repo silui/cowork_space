@@ -10,7 +10,7 @@ def f(x):
 
 def index(request):
     doodoo = os.environ['wai']
-    return HttpResponse("First code pipeline test" + doodoo)
+    return HttpResponse("Second code pipeline test" + doodoo)
 
 def test(request,multipler=2):
     if(multipler>20):
